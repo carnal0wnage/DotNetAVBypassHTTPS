@@ -8,5 +8,6 @@ This solution was made with Visual Studio 2010, but should compile on anything a
 http://www.mattandreko.com/2012/02/using-net-to-bypass-av.html
 
 ### Added after Fork ####
-Alphanum payload is now downloaded over HTTPS, you'll have to modify the c# source
+Alphanum payload is now downloaded over HTTPS, you'll have to modify the c# source.
+
 httshellcode.py is a payload generation script using msfpayload and msfencode, once it has generated a payload it will host it over a HTTPS server. You'll need a .pem
