@@ -43,9 +43,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cert', required=True, help='pem location')
     parser.add_argument('--payload', required=True, help='msf payload')
-    parser.add_argument('--lhost', required=True, help='Connectback IP')
-    parser.add_argument('--lport', required=True, help='Connectback Port')
-    parser.add_argument('--msfroot', default='/opt/metasploit/msf3')
+    parser.add_argument('--lhost', required=True, help='connectback IP')
+    parser.add_argument('--lport', required=True, help='connectback Port')
+    parser.add_argument('--msfroot', required=True, help='msf root dir')
     args = parser.parse_args()
     print "Creating Shellcode"
     create_shellcode(args)
