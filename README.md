@@ -2,17 +2,6 @@
 Alphanumeric payload is now downloaded over HTTPS, you'll have to modify the source code with the URL of your server e.g. https://www.google.com.
 
 httshellcode.py is a payload generation script using msfpayload and msfencode, once it has generated a payload it will host it over a HTTPS server. You'll need a .pem file.
-python httpshellcode.py -h
-usage: httpshellcode.py [-h] --cert CERT --payload PAYLOAD --lhost LHOST
-                        --lport LPORT [--msfroot MSFROOT]
-
-optional arguments:
-  -h, --help         show this help message and exit
-  --cert CERT        pem location
-  --payload PAYLOAD  msf payload
-  --lhost LHOST      Connectback IP
-  --lport LPORT      Connectback Port
-  --msfroot MSFROOT
 
 ### ORIGINAL WORK BY Matt Andreko ####
 ### DotNetAVBypassHTTPS
