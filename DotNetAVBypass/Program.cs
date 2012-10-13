@@ -1,5 +1,7 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
+using System.IO;
+using System.Net;
 
 namespace Wrapper
 {
